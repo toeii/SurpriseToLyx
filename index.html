@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Video Player</title>
+  <style type="text/css">
+    video {
+      display: block;
+      margin: 0 auto;
+    }
+  </style>
+</head>
+<body>
+  <video id="myVideo" width="80%" height="auto" controls>
+    <source src="http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4" type="video/mp4">
+    <source src="big_buck_bunny.ogg" type="video/ogg">
+    Your browser does not support the video tag.
+  </video>
+
+  <script>
+  var vid = document.getElementById("myVideo");
+  vid.onclick = function() {
+    if (vid.paused) {
+      vid.play();
+    } else {
+      vid.pause();
+    }
+  };
+  </script>
+</body>
+</html>
