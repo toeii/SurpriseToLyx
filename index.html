@@ -64,7 +64,7 @@
      	window.onload=function(){
      		var book=document.getElementById("book");
      		var pages=book.getElementsByTagName("div");
-     		var pageNumber=5,rota=-180;
+     		var pageNumber=6,rota=-180;
      		book.onclick=function(){
      			book.style.left="68%";
      			pages[pageNumber].style.transform="rotateY("+rota+"deg)";
@@ -75,7 +75,7 @@
      					pages[i].style.transform="rotateY(0deg)";
      				}
      				book.style.left="50%";
-     				pageNumber=5;
+     				pageNumber=6;
      				rota=-180;
      			}
      		}
@@ -84,12 +84,13 @@
 </head>
     <body>
 		<div id="book">
-            <div><img style="width: 640px;height: 480px;" src="config/k01.bmp" ></div>
-            <div><img style="width: 640px;height: 480px;" src="config/k02.bmp" ></div>
-            <div><img style="width: 640px;height: 480px;" src="config/k03.bmp" ></div>
-            <div><img style="width: 640px;height: 480px;" src="config/k04.bmp" ></div>
-            <div><img style="width: 640px;height: 480px;" src="config/k05.bmp" ></div>
-            <div><img style="width: 640px;height: 480px;" src="config/k06.bmp" ></div>
+            <div><img style="width: 640px;height: 480px;" src="config/k07.jpg" ></div>
+            <div><img style="width: 640px;height: 480px;" src="config/k06.jpg" ></div>
+            <div><img style="width: 640px;height: 480px;" src="config/k05.jpg" ></div>
+            <div><img style="width: 640px;height: 480px;" src="config/k04.jpg" ></div>
+            <div><img style="width: 640px;height: 480px;" src="config/k03.jpg" ></div>
+            <div><img style="width: 640px;height: 480px;" src="config/k02.jpg" ></div>
+            <div><img style="width: 640px;height: 480px;" src="config/k01.jpg" ></div>
 		</div>
 	</body>
 </html>
